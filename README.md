@@ -1,36 +1,68 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Ilika Earth - Basifying a Greener Tomorrow
+
+A Next.js application showcasing sustainable solutions and environmental initiatives.
+
+## Features
+
+- 🌱 Responsive design with Tailwind CSS
+- 🎨 Custom Ilika logo and branding
+- 📱 Mobile-friendly navigation
+- 🔄 Modern React components
+- 🎯 SEO optimized
+
+## Folder Structure
+
+```
+src/
+├── app/                    # Next.js App Router pages
+│   ├── about/             # About page
+│   ├── contact/           # Contact page
+│   ├── globals.css        # Global styles
+│   ├── layout.js          # Root layout
+│   └── page.js            # Home page
+├── components/            # Reusable React components
+│   ├── ui/               # UI components
+│   └── Navbar.js         # Navigation component
+├── hooks/                # Custom React hooks
+├── lib/                  # Utility functions and constants
+│   ├── constants.js      # App constants
+│   └── utils.js          # Helper functions
+└── styles/               # Additional styles
+```
 
 ## Getting Started
 
-First, run the development server:
-
+1. Install dependencies:
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+npm install
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. Run the development server:
+```bash
+npm run dev
+```
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+3. Open [http://localhost:3000](http://localhost:3000) with your browser.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Technologies Used
 
-## Learn More
+- **Next.js 14** - React framework
+- **Tailwind CSS** - Utility-first CSS framework
+- **React** - JavaScript library for building user interfaces
 
-To learn more about Next.js, take a look at the following resources:
+## Brand Colors
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- Primary Cyan: `#06B6D4`
+- Primary Green: `#10B981`
+- Text Gray: `#6B7280`
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Contributing
 
-## Deploy on Vercel
+1. Fork the repository
+2. Create a feature branch
+3. Make your changes
+4. Submit a pull request
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## License
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+This project is licensed under the MIT License.

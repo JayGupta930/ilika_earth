@@ -1,3 +1,5 @@
+import { CardHoverEffectDemo } from "@/components/HoverCard";
+
 export default function Home() {
   return (
     <div className="font-sans min-h-screen">
@@ -37,6 +39,7 @@ export default function Home() {
 
       {/* Features Section */}
       <div className="py-16 bg-[#FAFAFA]">
+        
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-gray-900 mb-4">
@@ -46,8 +49,9 @@ export default function Home() {
               Innovative approaches to environmental challenges
             </p>
           </div>
+          <CardHoverEffectDemo/>
           
-          <div className="grid md:grid-cols-3 gap-8">
+          {/* <div className="grid md:grid-cols-3 gap-8">
             <div className="text-center p-6 rounded-lg border border-gray-200 hover:shadow-lg transition-shadow">
               <div className="w-16 h-16 bg-gradient-to-r from-cyan-500 to-green-500 rounded-full flex items-center justify-center mx-auto mb-4">
                 <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -77,7 +81,7 @@ export default function Home() {
               <h3 className="text-xl font-semibold text-gray-900 mb-2">Global Impact</h3>
               <p className="text-gray-600">Making a difference worldwide through sustainable practices</p>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </div>

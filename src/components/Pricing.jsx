@@ -9,7 +9,7 @@ export default function Pricing() {
   const plans = [
     {
       name: 'Free',
-      price: '₹0',
+      price: '₹X',
       description: 'For your hobby',
       features: [
         'Basic design tools',
@@ -22,7 +22,7 @@ export default function Pricing() {
     },
     {
       name: 'Pro',
-      price: isAnnual ? '₹1 099' : '₹99',
+      price: isAnnual ? '₹XXX' : 'XX',
       description: 'For small business',
       features: [
         'Advanced design tools',

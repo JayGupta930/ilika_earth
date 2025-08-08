@@ -3,13 +3,13 @@
 export const COMPANY_INFO = {
   name: 'Ilika Earth',
   tagline: 'Basifying a Greener Tomorrow',
-  email: 'info@ilika-earth.com',
-  phone: '+1 (555) 123-4567',
+  email: 'ilikaearth@gmail.com',
+  phone: '+91 8817101064',
   address: {
-    street: '123 Green Innovation Drive',
-    city: 'Sustainability City',
-    state: 'SC',
-    zip: '12345'
+    street: 'Raipur, India',
+    city: 'Raipur',
+    state: 'Chhattisgarh',
+    zip: '492015'
   }
 };
 

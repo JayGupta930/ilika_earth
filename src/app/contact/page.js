@@ -80,17 +80,17 @@ export default function Contact() {
             >
               <motion.div variants={contactInfoVariants}>
                 <h3 className="text-lg font-semibold text-gray-900 mb-2">Email</h3>
-                <p className="text-gray-600">info@ilika-earth.com</p>
+                <p className="text-gray-600">ilikaearth@gmail.com</p>
               </motion.div>
               <motion.div variants={contactInfoVariants}>
                 <h3 className="text-lg font-semibold text-gray-900 mb-2">Phone</h3>
-                <p className="text-gray-600">+1 (555) 123-4567</p>
+                <p className="text-gray-600">+91 8817101064</p>
               </motion.div>
               <motion.div variants={contactInfoVariants}>
                 <h3 className="text-lg font-semibold text-gray-900 mb-2">Address</h3>
                 <p className="text-gray-600">
-                  123 Green Innovation Drive<br />
-                  Sustainability City, SC 12345
+                  Raipur, India<br />
+                  Raipur, Chhattisgarh 492015
                 </p>
               </motion.div>
             </motion.div>

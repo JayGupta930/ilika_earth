@@ -44,7 +44,7 @@ export function NavbarDemo() {
           <div className="relative inline-flex items-center justify-center group">
             <div className="absolute transition-all duration-200 rounded-full -inset-px bg-gradient-to-r from-green-500 to-green-800 group-hover:shadow-lg group-hover:shadow-green-500/50"></div>
             <Link
-              href="contact"
+              href="/contact"
               className="relative inline-flex items-center justify-center w-full px-6 py-2 text-base font-normal text-black bg-[#FAFAFA] border border-transparent rounded-full"
             >
              Get In Touch
@@ -65,14 +65,14 @@ export function NavbarDemo() {
             onClose={() => setIsMobileMenuOpen(false)}
           >
             {navItems.map((item, idx) => (
-              <a
+              <Link
                 key={`mobile-link-${idx}`}
                 href={item.link}
                 onClick={() => setIsMobileMenuOpen(false)}
                 className="relative text-black dark:text-black"
               >
                 <span className="block">{item.name}</span>
-              </a>
+              </Link>
             ))}
             <div className="flex w-full flex-col gap-4">
               <NavbarButton

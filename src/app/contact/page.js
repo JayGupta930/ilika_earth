@@ -41,7 +41,7 @@ export default function Contact() {
         animate="visible"
       >
         <motion.div 
-          className="text-center mb-12"
+          className="text-center mb-12 mt-24"
           variants={itemVariants}
         >
           <motion.h1 

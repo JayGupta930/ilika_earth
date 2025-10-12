@@ -9,39 +9,45 @@ export function CardHoverEffectDemo() {
 }
 export const projects = [
   {
-    title: "Stripe",
+    title: "GHG Emission Tool",
     description:
-      "A technology company that builds economic infrastructure for the internet.",
-    link: "https://stripe.com",
+      "Track, analyze, and report greenhouse gas emissions for your organization with advanced analytics and compliance-ready outputs.",
+    link: "#",
+    icon: "🌱",
   },
   {
-    title: "Netflix",
+    title: "Risk Compliances",
     description:
-      "A streaming service that offers a wide variety of award-winning TV shows, movies, anime, documentaries, and more on thousands of internet-connected devices.",
-    link: "https://netflix.com",
+      "Automate risk assessment and compliance management to ensure your business meets regulatory standards efficiently.",
+    link: "#",
+    icon: "🛡️",
   },
   {
-    title: "Google",
+    title: "Health & Safety",
     description:
-      "A multinational technology company that specializes in Internet-related services and products.",
-    link: "https://google.com",
+      "Monitor workplace health and safety metrics, incidents, and training to foster a safer environment for all employees.",
+    link: "#",
+    icon: "🏥",
   },
   {
-    title: "Meta",
+    title: "ESG Consulting",
     description:
-      "A technology company that focuses on building products that advance Facebook's mission of bringing the world closer together.",
-    link: "https://meta.com",
+      "Expert guidance and solutions for Environmental, Social, and Governance (ESG) strategy, reporting, and improvement.",
+    link: "#",
+    icon: "📊",
   },
   {
-    title: "Amazon",
+    title: "Coming Soon",
     description:
-      "A multinational technology company focusing on e-commerce, cloud computing, digital streaming, and artificial intelligence.",
-    link: "https://amazon.com",
+      "Stay tuned for more innovative tools and solutions coming soon.",
+    link: "#",
+    icon: "🚀",
   },
   {
-    title: "Microsoft",
+    title: "Coming Soon",
     description:
-      "A multinational technology company that develops, manufactures, licenses, supports, and sells computer software, consumer electronics, personal computers, and related services.",
-    link: "https://microsoft.com",
+      "Stay tuned for more innovative tools and solutions coming soon.",
+    link: "#",
+    icon: "🚀",
   },
 ];

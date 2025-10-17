@@ -3,8 +3,8 @@
 export const COMPANY_INFO = {
   name: 'Ilika Earth',
   tagline: 'Basifying a Greener Tomorrow',
-  email: 'ilikaearth@gmail.com',
-  phone: '+91 8817101064',
+  email: 'info@ilika.earth',
+  phone: '8817101064',
   address: {
     street: 'Raipur, India',
     city: 'Raipur',

@@ -69,26 +69,30 @@ export function NavbarDemo() {
                 key={`mobile-link-${idx}`}
                 href={item.link}
                 onClick={() => setIsMobileMenuOpen(false)}
-                className="relative text-black dark:text-black"
+                className="relative text-black dark:text-black py-2 px-2 w-full block hover:bg-gray-50 rounded-lg transition-colors"
               >
-                <span className="block">{item.name}</span>
+                <span className="block text-base font-medium">{item.name}</span>
               </Link>
             ))}
-            <div className="flex w-full flex-col gap-4">
-              <NavbarButton
-                onClick={() => setIsMobileMenuOpen(false)}
-                variant="primary"
-                className="w-full"
-              >
-                Login
-              </NavbarButton>
-              <NavbarButton
-                onClick={() => setIsMobileMenuOpen(false)}
-                variant="primary"
-                className="w-full"
-              >
-                Book a call
-              </NavbarButton>
+            <div className="w-full border-t border-gray-200 pt-4 mt-2">
+              <div className="flex w-full flex-col gap-3">
+                <NavbarButton
+                  onClick={() => setIsMobileMenuOpen(false)}
+                  variant="primary"
+                  className="w-full text-center"
+                  as="button"
+                >
+                  Login
+                </NavbarButton>
+                <NavbarButton
+                  onClick={() => setIsMobileMenuOpen(false)}
+                  variant="primary"
+                  className="w-full text-center bg-gradient-to-r from-green-500 to-green-600 text-white hover:from-green-600 hover:to-green-700 border-0 shadow-lg"
+                  as="button"
+                >
+                  Book a call
+                </NavbarButton>
+              </div>
             </div>
           </MobileNavMenu>
         </MobileNav>

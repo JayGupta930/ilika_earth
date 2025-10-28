@@ -6,6 +6,9 @@ export default function Contact() {
   const [formData, setFormData] = useState({
     name: '',
     email: '',
+    contactNo: '',
+    organization: '',
+    designation: '',
     subject: '',
     message: ''
   });
@@ -35,6 +38,9 @@ export default function Contact() {
           access_key: 'bcf40549-6bff-4ecf-a925-dafed7fb1a22', // Replace with your Web3Forms access key
           name: formData.name,
           email: formData.email,
+          contactNo: formData.contactNo,
+          organization: formData.organization,
+          designation: formData.designation,
           subject: formData.subject,
           message: formData.message
         })
@@ -47,6 +53,9 @@ export default function Contact() {
         setFormData({
           name: '',
           email: '',
+          contactNo: '',
+          organization: '',
+          designation: '',
           subject: '',
           message: ''
         });
@@ -62,7 +71,7 @@ export default function Contact() {
   };
 
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-white pt-16">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-20">
         {/* Header */}
         <div className="text-center mb-16">
@@ -204,6 +213,57 @@ export default function Contact() {
                       onChange={handleChange}
                       className="w-full px-4 py-3 bg-white border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-transparent transition-all text-gray-900"
                       placeholder="your@email.com"
+                      required
+                    />
+                  </div>
+
+                  {/* Contact Number */}
+                  <div>
+                    <label htmlFor="contactNo" className="block text-sm font-medium text-gray-700 mb-2">
+                      Contact No.
+                    </label>
+                    <input
+                      type="tel"
+                      id="contactNo"
+                      name="contactNo"
+                      value={formData.contactNo}
+                      onChange={handleChange}
+                      className="w-full px-4 py-3 bg-white border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-transparent transition-all text-gray-900"
+                      placeholder="Your contact number"
+                      required
+                    />
+                  </div>
+
+                  {/* Organization */}
+                  <div>
+                    <label htmlFor="organization" className="block text-sm font-medium text-gray-700 mb-2">
+                      Name of Organization
+                    </label>
+                    <input
+                      type="text"
+                      id="organization"
+                      name="organization"
+                      value={formData.organization}
+                      onChange={handleChange}
+                      className="w-full px-4 py-3 bg-white border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-transparent transition-all text-gray-900"
+                      placeholder="Organization name"
+                      required
+                    />
+                  </div>
+
+                  {/* Designation */}
+                  <div>
+                    <label htmlFor="designation" className="block text-sm font-medium text-gray-700 mb-2">
+                      Designation
+                    </label>
+                    <input
+                      type="text"
+                      id="designation"
+                      name="designation"
+                      value={formData.designation}
+                      onChange={handleChange}
+                      className="w-full px-4 py-3 bg-white border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-transparent transition-all text-gray-900"
+                      placeholder="Your designation"
                       required
                     />
                   </div>

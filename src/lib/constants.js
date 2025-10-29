@@ -17,14 +17,11 @@ export const NAVIGATION_LINKS = [
   { href: '/', label: 'Home' },
   { href: '/about', label: 'About' },
   { href: '/services', label: 'Services' },
-  { href: '/sustainability', label: 'Sustainability' },
   { href: '/contact', label: 'Contact' }
 ];
 
 export const SOCIAL_LINKS = {
-  twitter: 'https://twitter.com/ilikaearth',
-  linkedin: 'https://linkedin.com/company/ilikaearth',
-  facebook: 'https://facebook.com/ilikaearth'
+  linkedin: 'https://www.linkedin.com/company/ilika-earth/'
 };
 
 export const COLORS = {

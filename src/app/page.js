@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { CardHoverEffectDemo } from "@/components/HoverCard";
 import Pricing from "@/components/Pricing";
 
@@ -21,12 +22,12 @@ export default function Home() {
               Join us in our mission to create environmental solutions that matter.
             </p>
             <div className="flex gap-4 justify-center flex-col sm:flex-row">
-              <a
+              <Link
                 className="rounded-full bg-gradient-to-r from-cyan-500 to-green-500 text-white transition-all duration-200 flex items-center justify-center gap-2 hover:from-cyan-600 hover:to-green-600 font-medium text-base h-12 px-8 shadow-lg hover:shadow-xl transform hover:scale-105"
-                href="#learn-more"
+                href="/about"
               >
                 Learn More
-              </a>
+              </Link>
               <div className="relative inline-flex items-center justify-center group">
                 <div className="absolute transition-all duration-200 rounded-full -inset-px bg-gradient-to-r from-green-500 to-green-800 group-hover:shadow-lg group-hover:shadow-green-500/50"></div>
                 <a

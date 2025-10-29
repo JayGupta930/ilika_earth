@@ -71,22 +71,6 @@ export default function Footer() {
               >
                 LinkedIn
               </a>
-              <a 
-                href={SOCIAL_LINKS.twitter}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="block text-gray-400 hover:text-green-400 transition-colors duration-200 text-sm"
-              >
-                Twitter
-              </a>
-              <a 
-                href={SOCIAL_LINKS.facebook}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="block text-gray-400 hover:text-green-400 transition-colors duration-200 text-sm"
-              >
-                Facebook
-              </a>
             </div>
             
             <div className="space-y-2">

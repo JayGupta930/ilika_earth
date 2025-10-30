@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { CardHoverEffectDemo } from "@/components/HoverCard";
+import EnterprisePricing from "@/components/EnterprisePricing";
 // import Pricing from "@/components/Pricing";
 
 export default function Home() {
@@ -57,7 +58,7 @@ export default function Home() {
           <CardHoverEffectDemo/>
         </div>
       </div>
-      {/* <Pricing /> */}
+      <EnterprisePricing />
     </div>
   );
 }

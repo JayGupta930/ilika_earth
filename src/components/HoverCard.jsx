@@ -37,17 +37,17 @@ export const projects = [
     icon: "📊",
   },
   {
-    title: "Coming Soon",
+    title: "Disclosure reporting",
     description:
-      "Stay tuned for more innovative tools and solutions coming soon.",
+      "With ilika disclose your report based on BRSR, GRI, CBAM, CSRD etc. Consolidate sustainability data, automate disclosures, and stay audit-ready across every framework.",
     link: "#",
-    icon: "🚀",
+    icon: "📄",
   },
   {
-    title: "Coming Soon",
+    title: "AI Embedded Tool",
     description:
-      "Stay tuned for more innovative tools and solutions coming soon.",
+      "Developing AI based tool Unlock predictive insights, streamline ESG decision-making, and surface intelligent recommendations powered by embedded AI.",
     link: "#",
-    icon: "🚀",
+    icon: "🤖",
   },
 ];

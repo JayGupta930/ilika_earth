@@ -12,7 +12,7 @@ export const metadata = {
   title: "Ilika Earth - Basifying a Greener Tomorrow",
   description: "Sustainable solutions for a greener future",
   icons: {
-    icon: [{ url: "/home/ilika.png", type: "image/png", sizes: "32x32" }],
+    icon: "/home/ilika.png",
     shortcut: "/home/ilika.png",
     apple: "/home/ilika.png",
   },

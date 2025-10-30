@@ -69,7 +69,7 @@ export default function Pricing() {
             <button
               type="button"
               onClick={() => setIsAnnual(false)}
-              className={`px-6 py-2.5 text-sm font-medium transition-colors rounded-full ${
+              className={`cursor-pointer px-6 py-2.5 text-sm font-medium transition-colors rounded-full ${
                 !isAnnual
                   ? 'bg-black/10 text-black dark:bg-white/10'
                   : 'text-zinc-600 hover:text-black -400'
@@ -80,7 +80,7 @@ export default function Pricing() {
             <button
               type="button"
               onClick={() => setIsAnnual(true)}
-              className={`px-6 py-2.5 text-sm font-medium transition-colors rounded-full ${
+              className={`cursor-pointer px-6 py-2.5 text-sm font-medium transition-colors rounded-full ${
                 isAnnual
                   ? 'bg-black/10 text-black dark:bg-white/10'
                   : 'text-zinc-600 hover:text-black -400'
@@ -154,7 +154,7 @@ export default function Pricing() {
               {/* CTA */}
               <button
                 type="button"
-                className={`w-full rounded-xl py-2.5 px-4 text-sm font-medium transition-colors ${
+                className={`cursor-pointer w-full rounded-xl py-2.5 px-4 text-sm font-medium transition-colors ${
                   plan.highlighted
                     ? 'bg-black hover:bg-black/90'
                     : 'border border-black/10 text-black hover:bg-black/5  dark:hover:bg-white/5'

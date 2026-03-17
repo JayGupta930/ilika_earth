@@ -1,156 +1,103 @@
 export default function About() {
   return (
-    <div className="min-h-screen bg-[#FAFAFA] font-sans">
-      {/* Hero Section */}
-      <div className="bg-gradient-to-br from-cyan-50 to-green-50 py-20">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-24">
-          <div className="text-center mb-16">
-            <h1 className="text-4xl md:text-6xl font-bold text-gray-900 mb-6">
-              About{" "}
-              <span className="bg-gradient-to-r from-cyan-600 to-green-600 bg-clip-text text-transparent">
-                Ilika
-              </span>
-            </h1>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Basifying a greener tomorrow through sustainable innovation and environmental responsibility.
+    <section className="relative isolate min-h-screen overflow-hidden bg-[#FAFAFA] px-4 pb-16 pt-28 sm:px-6 lg:px-8">
+
+      <div className="mx-auto max-w-7xl" style={{ fontFamily: "Inter, Poppins, ui-sans-serif, system-ui, sans-serif" }}>
+        <div className="mx-auto max-w-3xl text-center">
+          <p className="mb-3 inline-flex items-center rounded-full border border-emerald-200 bg-emerald-50 px-4 py-1 text-xs font-semibold tracking-[0.16em] text-emerald-700">
+            WHO WE ARE
+          </p>
+          <h1 className="text-4xl font-semibold leading-tight text-gray-900 sm:text-5xl md:text-6xl">
+            About ILiKA
+          </h1>
+          <p className="mx-auto mt-5 max-w-2xl text-base text-gray-600 sm:text-lg">
+            Building a Sustainable Future with AI & IoT
+          </p>
+        </div>
+
+        <div className="mt-14 grid grid-cols-1 gap-7 md:grid-cols-2 xl:grid-cols-3">
+          <article className="group relative overflow-hidden rounded-[20px] border border-emerald-100 bg-white/90 p-7 shadow-[0_14px_32px_rgba(16,24,40,0.08)] transition-all duration-300 hover:-translate-y-1 hover:scale-[1.02] hover:border-emerald-300 hover:shadow-[0_25px_65px_rgba(16,185,129,0.22)]">
+            <div className="pointer-events-none absolute inset-0 rounded-[20px] ring-1 ring-inset ring-emerald-100/80 transition-all duration-300 group-hover:ring-emerald-200" />
+            <div className="mb-5 inline-flex h-12 w-12 items-center justify-center rounded-2xl border border-emerald-200/70 bg-gradient-to-br from-emerald-100 to-teal-100 text-emerald-700">
+              <svg className="h-6 w-6" fill="none" stroke="currentColor" strokeWidth="1.8" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" d="M20.25 12A8.25 8.25 0 1 1 3.75 12a8.25 8.25 0 0 1 16.5 0Z" />
+                <path strokeLinecap="round" strokeLinejoin="round" d="M12 3.75c2.4 2.4 2.4 14.1 0 16.5m0-16.5c-2.4 2.4-2.4 14.1 0 16.5M4.5 9.75h15m-15 4.5h15" />
+              </svg>
+            </div>
+
+            <h2 className="text-2xl font-semibold text-emerald-950">About ILiKA</h2>
+            <p className="mt-4 text-sm leading-relaxed text-gray-700 sm:text-base">
+              ILiKA is inspired by the Sanskrit word meaning Shrishti (Earth). We aim to build a greener and more sustainable future by helping organizations transition to a low-carbon economy.
             </p>
-          </div>
+            <p className="mt-4 text-sm leading-relaxed text-gray-700 sm:text-base">
+              With the 1.5C global warming threshold already breached, we empower businesses to reduce environmental impact and drive long-term sustainability.
+            </p>
+          </article>
+
+          <article className="group relative overflow-hidden rounded-[20px] border border-emerald-100 bg-white/90 p-7 shadow-[0_14px_32px_rgba(16,24,40,0.08)] transition-all duration-300 hover:-translate-y-1 hover:scale-[1.02] hover:border-emerald-300 hover:shadow-[0_25px_65px_rgba(20,184,166,0.22)]">
+            <div className="pointer-events-none absolute inset-0 rounded-[20px] ring-1 ring-inset ring-emerald-100/80 transition-all duration-300 group-hover:ring-teal-200" />
+            <div className="mb-5 inline-flex h-12 w-12 items-center justify-center rounded-2xl border border-teal-200/70 bg-gradient-to-br from-teal-100 to-emerald-100 text-teal-700">
+              <svg className="h-6 w-6" fill="none" stroke="currentColor" strokeWidth="1.8" viewBox="0 0 24 24">
+                <rect x="4" y="4" width="16" height="16" rx="2" strokeLinecap="round" strokeLinejoin="round" />
+                <path strokeLinecap="round" strokeLinejoin="round" d="M9 9h6v6H9zM2 9h2m0 6H2m20-6h-2m2 6h-2M9 2v2m6-2v2m-6 16v2m6-2v2" />
+              </svg>
+            </div>
+
+            <h2 className="text-2xl font-semibold text-emerald-950">AI & IoT Platform</h2>
+            <p className="mt-4 text-sm leading-relaxed text-gray-700 sm:text-base">
+              Our AI-enabled SaaS platform integrated with IoT systems helps monitor and optimize environmental impact in real time.
+            </p>
+            <ul className="mt-5 space-y-3 text-sm text-gray-700 sm:text-base">
+              <li className="flex gap-3">
+                <span className="mt-2 h-2 w-2 shrink-0 rounded-full bg-emerald-500" />
+                Real-time tracking of energy, water, waste, and emissions
+              </li>
+              <li className="flex gap-3">
+                <span className="mt-2 h-2 w-2 shrink-0 rounded-full bg-emerald-500" />
+                AI-driven recommendations to reduce GHG emissions
+              </li>
+              <li className="flex gap-3">
+                <span className="mt-2 h-2 w-2 shrink-0 rounded-full bg-emerald-500" />
+                Automated ESG compliance reporting (BRSR, GRI, CBAM)
+              </li>
+            </ul>
+          </article>
+
+          <article className="group relative overflow-hidden rounded-[20px] border border-emerald-100 bg-white/90 p-7 shadow-[0_14px_32px_rgba(16,24,40,0.08)] transition-all duration-300 hover:-translate-y-1 hover:scale-[1.02] hover:border-emerald-300 hover:shadow-[0_25px_65px_rgba(52,211,153,0.22)] md:col-span-2 xl:col-span-1">
+            <div className="pointer-events-none absolute inset-0 rounded-[20px] ring-1 ring-inset ring-emerald-100/80 transition-all duration-300 group-hover:ring-emerald-200" />
+            <div className="mb-5 inline-flex h-12 w-12 items-center justify-center rounded-2xl border border-emerald-200/70 bg-gradient-to-br from-emerald-100 to-lime-100 text-emerald-700">
+              <svg className="h-6 w-6" fill="none" stroke="currentColor" strokeWidth="1.8" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" d="M15 7.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Zm-9 11.25a6 6 0 0 1 12 0" />
+                <path strokeLinecap="round" strokeLinejoin="round" d="M16.5 11.25h5.25v5.25h-5.25z" />
+                <path strokeLinecap="round" strokeLinejoin="round" d="m16.5 12 2.625 2.1L21.75 12" />
+              </svg>
+            </div>
+
+            <h2 className="text-2xl font-semibold text-emerald-950">Team & Contact</h2>
+            <p className="mt-4 text-sm leading-relaxed text-gray-700 sm:text-base">
+              We are building AI-enabled sustainable organizations while creating employment opportunities in Chhattisgarh.
+            </p>
+
+            <div className="mt-5 space-y-4 text-sm text-gray-700 sm:text-base">
+              <div>
+                <p className="text-xs font-semibold uppercase tracking-[0.14em] text-emerald-700">Founders</p>
+                <p className="mt-1">Gayatri Bhardwaj</p>
+                <p>Jay Gupta</p>
+              </div>
+
+              <div>
+                <p className="text-xs font-semibold uppercase tracking-[0.14em] text-emerald-700">Contact</p>
+                <p className="mt-1">Phone: 88171-01064, 7417959474</p>
+                <p>
+                  Email: <a className="underline decoration-emerald-400 underline-offset-4 hover:text-emerald-700" href="mailto:info@ilika.earth">info@ilika.earth</a>,{" "}
+                  <a className="underline decoration-emerald-400 underline-offset-4 hover:text-emerald-700" href="mailto:ilikagreentech@gmail.com">ilikagreentech@gmail.com</a>
+                </p>
+                <p>Raipur, Chhattisgarh</p>
+              </div>
+            </div>
+          </article>
         </div>
       </div>
-
-      {/* Main Content */}
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-        <div className="grid lg:grid-cols-2 gap-16 items-start">
-          {/* Left Column - Mission */}
-          <div className="space-y-8">
-            <div className="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100">
-              <div className="flex items-center mb-6">
-                <div className="w-12 h-12 bg-gradient-to-r from-cyan-500 to-green-500 rounded-xl flex items-center justify-center mr-4">
-                  <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
-                  </svg>
-                </div>
-                <h2 className="text-3xl font-bold bg-gradient-to-r from-cyan-600 to-green-600 bg-clip-text text-transparent">
-                  Our Mission
-                </h2>
-              </div>
-              <p className="text-lg text-gray-600 mb-6 leading-relaxed">
-                At Ilika, we are committed to creating sustainable solutions that protect our planet 
-                while driving innovation. Our mission is to develop technologies and practices that 
-                contribute to a greener, more sustainable future for generations to come.
-              </p>
-              <p className="text-lg text-gray-600 leading-relaxed">
-                Through cutting-edge research, strategic partnerships, and unwavering dedication to 
-                environmental stewardship, we're working to make a positive impact on the world.
-              </p>
-            </div>
-          </div>
-
-          {/* Right Column - Values */}
-          <div className="space-y-8">
-            <div className="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100">
-              <div className="flex items-center mb-6">
-                <div className="w-12 h-12 bg-gradient-to-r from-green-500 to-cyan-500 rounded-xl flex items-center justify-center mr-4">
-                  <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
-                  </svg>
-                </div>
-                <h3 className="text-3xl font-bold bg-gradient-to-r from-green-600 to-cyan-600 bg-clip-text text-transparent">
-                  Our Values
-                </h3>
-              </div>
-              <ul className="space-y-6">
-                <li className="flex items-start group">
-                  <div className="w-3 h-3 bg-gradient-to-r from-cyan-500 to-green-500 rounded-full mt-2 mr-4 group-hover:scale-110 transition-transform duration-200"></div>
-                  <span className="text-gray-600 text-lg leading-relaxed">Environmental sustainability in everything we do</span>
-                </li>
-                <li className="flex items-start group">
-                  <div className="w-3 h-3 bg-gradient-to-r from-cyan-500 to-green-500 rounded-full mt-2 mr-4 group-hover:scale-110 transition-transform duration-200"></div>
-                  <span className="text-gray-600 text-lg leading-relaxed">Innovation that creates lasting positive change</span>
-                </li>
-                <li className="flex items-start group">
-                  <div className="w-3 h-3 bg-gradient-to-r from-cyan-500 to-green-500 rounded-full mt-2 mr-4 group-hover:scale-110 transition-transform duration-200"></div>
-                  <span className="text-gray-600 text-lg leading-relaxed">Transparency and integrity in all our operations</span>
-                </li>
-                <li className="flex items-start group">
-                  <div className="w-3 h-3 bg-gradient-to-r from-cyan-500 to-green-500 rounded-full mt-2 mr-4 group-hover:scale-110 transition-transform duration-200"></div>
-                  <span className="text-gray-600 text-lg leading-relaxed">Collaboration with communities and partners</span>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-
-        {/* Statistics Section */}
-        <div className="mt-20">
-          <div className="grid md:grid-cols-3 gap-8">
-            <div className="text-center bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100 group">
-              <div className="w-16 h-16 bg-gradient-to-r from-cyan-500 to-green-500 rounded-2xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
-                <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                </svg>
-              </div>
-              <h3 className="text-3xl font-bold bg-gradient-to-r from-cyan-600 to-green-600 bg-clip-text text-transparent mb-2">
-                Global Impact
-              </h3>
-              <p className="text-gray-600">Making a difference worldwide through sustainable solutions</p>
-            </div>
-
-            <div className="text-center bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100 group">
-              <div className="w-16 h-16 bg-gradient-to-r from-green-500 to-cyan-500 rounded-2xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
-                <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
-                </svg>
-              </div>
-              <h3 className="text-3xl font-bold bg-gradient-to-r from-green-600 to-cyan-600 bg-clip-text text-transparent mb-2">
-                Innovation
-              </h3>
-              <p className="text-gray-600">Pioneering breakthrough technologies for environmental progress</p>
-            </div>
-
-            <div className="text-center bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100 group">
-              <div className="w-16 h-16 bg-gradient-to-r from-cyan-500 to-green-500 rounded-2xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
-                <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
-                </svg>
-              </div>
-              <h3 className="text-3xl font-bold bg-gradient-to-r from-cyan-600 to-green-600 bg-clip-text text-transparent mb-2">
-                Community
-              </h3>
-              <p className="text-gray-600">Building partnerships that amplify our environmental impact</p>
-            </div>
-          </div>
-        </div>
-
-        {/* Call to Action */}
-        <div className="mt-20 text-center">
-          <div className="bg-gradient-to-r from-cyan-50 to-green-50 p-12 rounded-3xl border border-gray-100">
-            <h3 className="text-3xl font-bold text-gray-900 mb-4">
-              Ready to Join Our{" "}
-              <span className="bg-gradient-to-r from-cyan-600 to-green-600 bg-clip-text text-transparent">
-                Mission?
-              </span>
-            </h3>
-            <p className="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
-              Partner with us to create innovative solutions that drive environmental change and build a sustainable future.
-            </p>
-            <div className="flex gap-4 justify-center flex-col sm:flex-row">
-              <a
-                className="rounded-full bg-gradient-to-r from-cyan-500 to-green-500 text-white transition-all duration-200 flex items-center justify-center gap-2 hover:from-cyan-600 hover:to-green-600 font-medium text-base h-12 px-8 shadow-lg hover:shadow-xl transform hover:scale-105"
-                href="/contact"
-              >
-                Get In Touch
-              </a>
-              <a
-                className="rounded-full border-2 border-gray-300 text-gray-700 transition-all duration-200 flex items-center justify-center gap-2 hover:border-cyan-500 hover:text-cyan-600 font-medium text-base h-12 px-8"
-                href="/services"
-              >
-                Our Services
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+    </section>
   );
 }

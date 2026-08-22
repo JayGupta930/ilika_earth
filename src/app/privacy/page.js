@@ -1,7 +1,10 @@
-export const metadata = {
-  title: "Privacy Policy | Ilika Earth",
+import { createPageMetadata } from "@/lib/site";
+
+export const metadata = createPageMetadata({
+  title: "Privacy Policy",
   description: "Learn how Ilika Earth collects, uses, and protects your information.",
-};
+  path: "/privacy",
+});
 
 export default function PrivacyPolicyPage() {
   return (

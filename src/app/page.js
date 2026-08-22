@@ -1,7 +1,14 @@
 import Link from "next/link";
 import { CardHoverEffectDemo } from "@/components/HoverCard";
 import EnterprisePricing from "@/components/EnterprisePricing";
+import { createPageMetadata } from "@/lib/site";
 // import Pricing from "@/components/Pricing";
+
+export const metadata = createPageMetadata({
+  title: "AI & IoT Sustainability Solutions",
+  description: "Ilika Earth helps organizations manage ESG data, greenhouse gas emissions, machinery performance, and sustainability reporting with AI and IoT.",
+  path: "/",
+});
 
 export default function Home() {
   return (
@@ -31,12 +38,12 @@ export default function Home() {
               </Link>
               <div className="relative inline-flex items-center justify-center group">
                 <div className="absolute transition-all duration-200 rounded-full -inset-px bg-gradient-to-r from-green-500 to-green-800 group-hover:shadow-lg group-hover:shadow-green-500/50"></div>
-                <a
+                <Link
                   href="/contact"
                   className="relative inline-flex items-center justify-center w-full px-8 py-3 text-base font-normal text-black bg-[#FAFAFA] border border-transparent rounded-full"
                 >
                   Get in Touch
-                </a>
+                </Link>
               </div>
             </div>
           </div>

@@ -1,7 +1,10 @@
-export const metadata = {
-  title: "Terms of Service | Ilika Earth",
+import { createPageMetadata } from "@/lib/site";
+
+export const metadata = createPageMetadata({
+  title: "Terms of Service",
   description: "Understand the terms and conditions that govern your use of Ilika Earth's services.",
-};
+  path: "/terms",
+});
 
 export default function TermsOfServicePage() {
   return (

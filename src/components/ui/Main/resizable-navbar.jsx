@@ -182,7 +182,7 @@ export const NavbarLogo = () => {
       href="/"
       className="relative z-20 mr-4 flex items-center space-x-2 px-2 py-1 text-sm font-normal text-black"
     >
-      <h1 className="text-transparent bg-gradient-to-br from-[#7be2a7] to-[#074702] bg-clip-text text-3xl">Ilika.Earth</h1>
+      <span className="text-transparent bg-gradient-to-br from-[#7be2a7] to-[#074702] bg-clip-text text-3xl">Ilika.Earth</span>
       <Image
         src="/home/ilika.png"
         alt="logo"

@@ -9,13 +9,11 @@ export const HoverEffect = ({ items, className }) => {
   return (
     <div className={cn("grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 py-10", className)}>
       {items.map((item, idx) => (
-        <a
-          href={item?.link}
+        <div
           key={`${item?.link || "item"}-${idx}`}   // ✅ unique key
           className="relative group block p-2 h-full w-full"
           onMouseEnter={() => setHoveredIndex(idx)}
           onMouseLeave={() => setHoveredIndex(null)}
-          onClick={(event) => event.preventDefault()}
         >
           <AnimatePresence>
             {hoveredIndex === idx && (
@@ -39,7 +37,7 @@ export const HoverEffect = ({ items, className }) => {
             <CardTitle>{item.title}</CardTitle>
             <CardDescription>{item.description}</CardDescription>
           </Card>
-        </a>
+        </div>
       ))}
     </div>
   );
@@ -70,9 +68,9 @@ export const CardIcon = ({ className, children }) => {
 
 export const CardTitle = ({ className, children }) => {
   return (
-    <h4 className={cn("text-black font-bold tracking-wide mt-4", className)}>
+    <h3 className={cn("text-black font-bold tracking-wide mt-4", className)}>
       {children}
-    </h4>
+    </h3>
   );
 };
 

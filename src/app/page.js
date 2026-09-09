@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { CardHoverEffectDemo } from "@/components/HoverCard";
+import ClosingBrandCta from "@/components/ClosingBrandCta";
 import EnterprisePricing from "@/components/EnterprisePricing";
 import { createPageMetadata } from "@/lib/site";
 // import Pricing from "@/components/Pricing";
@@ -14,8 +15,12 @@ export default function Home() {
   return (
     <div className="font-sans min-h-screen">
       {/* Hero Section */}
-      <div className="bg-[#FAFAFA] py-20 ">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-24">
+      <div
+        className="relative min-h-screen overflow-hidden bg-cover bg-center bg-no-repeat py-20"
+        style={{ backgroundImage: "url('/Image/heroone.jpg')" }}
+      >
+        <div className="absolute inset-0 bg-white/10" aria-hidden="true" />
+        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-24">
           <div className="text-center">
             <div className="flex justify-center mb-8">
             </div>
@@ -66,6 +71,7 @@ export default function Home() {
         </div>
       </div>
       <EnterprisePricing />
+      <ClosingBrandCta />
     </div>
   );
 }

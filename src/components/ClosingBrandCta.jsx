@@ -47,10 +47,10 @@ export default function ClosingBrandCta() {
               ROOTED IN IMPACT
             </p>
             <h2 className="mt-5 font-serif text-4xl leading-[1.08] tracking-[-0.035em] text-white sm:text-5xl lg:text-6xl">
-              Technology for a more sustainable future.
+              Turning sustainability into measurable impact.
             </h2>
             <p className="mt-6 text-xs font-semibold tracking-[0.18em] text-white/90 sm:text-sm">
-              POWERED BY ILIKA.EARTH
+              POWERED BY ILIKA
             </p>
             <Link
               href="/contact"

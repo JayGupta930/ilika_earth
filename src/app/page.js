@@ -56,20 +56,19 @@ export default function Home() {
       </div>
 
       {/* Features Section */}
-      <div className="py-16 bg-[#FAFAFA]">
-        
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">
+      <section aria-labelledby="sustainable-solutions-heading" className="bg-[#f8faf8] py-20 sm:py-28 lg:py-32">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="mx-auto mb-14 max-w-3xl text-center sm:mb-20">
+            <h2 id="sustainable-solutions-heading" className="text-4xl font-bold leading-[1.1] tracking-[-0.045em] text-[#1d302c] sm:text-5xl lg:text-6xl">
               Sustainable Solutions
             </h2>
-            <p className="text-lg text-gray-600">
-              Innovative approaches to environmental challenges
+            <p className="mx-auto mt-6 max-w-xl text-base leading-8 text-[#64736d] sm:text-lg">
+              Innovative tools for a smarter and more sustainable future.
             </p>
           </div>
-          <CardHoverEffectDemo/>
+          <CardHoverEffectDemo />
         </div>
-      </div>
+      </section>
       <EnterprisePricing />
       <ClosingBrandCta />
     </div>

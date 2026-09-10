@@ -1,0 +1,126 @@
+.list {
+  display: grid;
+  gap: clamp(72px, 8vw, 112px);
+  max-width: 1200px;
+  margin-inline: auto;
+}
+
+.reveal {
+  min-width: 0;
+  transition: opacity 500ms ease, transform 500ms ease;
+}
+
+.reveal[data-reveal='pending'] {
+  opacity: 0;
+  transform: translateY(30px);
+}
+
+.row {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  align-items: center;
+  column-gap: clamp(32px, 5vw, 72px);
+}
+
+.imageWrap {
+  min-width: 0;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  object-position: center;
+  border-radius: 20px;
+  transition: transform 500ms ease;
+}
+
+.row[data-alignment='right'] .imageWrap {
+  grid-column: 2;
+  grid-row: 1;
+}
+
+.row[data-alignment='right'] .content {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding-block: 24px;
+}
+
+.number {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: #54816c;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  font-variant-numeric: tabular-nums;
+}
+
+.number::before {
+  content: '';
+  width: 28px;
+  height: 1px;
+  background: #99baa8;
+}
+
+.title {
+  margin-top: 25px;
+  color: #1d302c;
+  font-size: clamp(28px, 2.7vw, 38px);
+  font-weight: 600;
+  line-height: 1.18;
+  letter-spacing: -0.04em;
+}
+
+.description {
+  margin-top: 20px;
+  max-width: 440px;
+  color: #64736d;
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+.explore {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 32px;
+  padding-bottom: 7px;
+  border-bottom: 1px solid #b8d1c1;
+  color: #21674c;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.explore svg { transition: transform 400ms ease; }
+
+@media (hover: hover) {
+  .row:hover .image { transform: scale(1.03); }
+  .row:hover .explore svg { transform: translateX(4px); }
+}
+
+@media (max-width: 767px) {
+  .list { gap: 64px; }
+  .row { grid-template-columns: minmax(0, 1fr); gap: 28px; }
+  .row[data-alignment='right'] .imageWrap,
+  .row[data-alignment='right'] .content { grid-column: auto; grid-row: auto; }
+  .content { padding: 0; }
+  .title { margin-top: 20px; }
+  .description { margin-top: 16px; font-size: 15px; }
+  .explore { margin-top: 26px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal, .image, .explore svg { transition: none; }
+  .reveal[data-reveal='pending'] { opacity: 1; transform: none; }
+  .row:hover .image, .row:hover .explore svg { transform: none; }
+}

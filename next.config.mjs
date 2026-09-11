@@ -1,5 +1,9 @@
-/** @type {import('next').NextConfig} */
-const nextConfig = {
+import { PHASE_DEVELOPMENT_SERVER } from "next/constants.js";
+
+/** @returns {import('next').NextConfig} */
+const nextConfig = (phase) => ({
+  // Keep production builds from overwriting a running development server.
+  distDir: phase === PHASE_DEVELOPMENT_SERVER ? ".next-dev" : ".next",
   // Enable “export” mode: build HTML for every route
   output: "export",
   trailingSlash: true,
@@ -11,6 +15,6 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
-};
+});
 
 export default nextConfig;

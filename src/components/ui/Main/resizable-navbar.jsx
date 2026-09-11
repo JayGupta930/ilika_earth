@@ -109,13 +109,7 @@ export const MobileNav = ({ children, className, visible }) => {
     <motion.div
       animate={{
         backdropFilter: visible ? "blur(10px)" : "none",
-        boxShadow: visible
-          ? "0 0 24px rgba(34, 42, 53, 0.06), 0 1px 1px rgba(0, 0, 0, 0.05), 0 0 0 1px rgba(34, 42, 53, 0.04), 0 0 4px rgba(34, 42, 53, 0.08), 0 16px 68px rgba(47, 48, 55, 0.05), 0 1px 0 rgba(255, 255, 255, 0.1) inset"
-          : "none",
-        width: visible ? "90%" : "100%",
-        paddingRight: visible ? "12px" : "0px",
-        paddingLeft: visible ? "12px" : "0px",
-        borderRadius: visible ? "4px" : "2rem",
+        boxShadow: "0 2px 12px rgba(34, 42, 53, 0.05)",
         y: visible ? 20 : 0,
       }}
       transition={{
@@ -124,8 +118,7 @@ export const MobileNav = ({ children, className, visible }) => {
         damping: 50,
       }}
       className={cn(
-        "relative z-50 mx-auto flex w-full max-w-[calc(100vw-2rem)] flex-col items-center justify-between bg-transparent px-0 py-2 lg:hidden",
-        visible && "bg-white/80 dark:bg-neutral-950/80",
+        "relative z-50 mx-auto flex h-[52px] w-[calc(100%-24px)] max-w-[calc(100vw-24px)] flex-col items-center justify-center rounded-[9999px] bg-white px-4 py-1 ring-1 ring-black/5 lg:hidden",
         className,
       )}
     >
@@ -138,7 +131,7 @@ export const MobileNavHeader = ({ children, className }) => {
   return (
     <div
       className={cn(
-        "flex w-full flex-row items-center justify-between",
+        "flex w-full min-w-0 flex-row items-center justify-between gap-2 [&>a]:mr-10 [&>a]:shrink-0 [&>a]:whitespace-nowrap",
         className,
       )}
     >
@@ -157,7 +150,7 @@ export const MobileNavMenu = ({ children, className, isOpen, onClose }) => {
           exit={{ opacity: 0, y: -10 }}
           transition={{ duration: 0.2, ease: "easeOut" }}
           className={cn(
-            "absolute inset-x-0 top-16 z-50 flex w-full max-w-[calc(100vw-2rem)] mx-auto flex-col items-start justify-start gap-4 rounded-lg bg-white backdrop-blur-sm px-6 py-6 shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]",
+            "absolute inset-x-0 top-[calc(100%+0.5rem)] z-50 flex w-full max-w-[calc(100vw-2rem)] mx-auto flex-col items-start justify-start gap-4 rounded-2xl bg-white backdrop-blur-sm px-6 py-6 shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]",
             className,
           )}
         >
@@ -170,9 +163,9 @@ export const MobileNavMenu = ({ children, className, isOpen, onClose }) => {
 
 export const MobileNavToggle = ({ isOpen, onClick }) => {
   return isOpen ? (
-    <X className="text-black dark:text-white" onClick={onClick} />
+    <X className="size-6 shrink-0 cursor-pointer text-[#111827]" onClick={onClick} />
   ) : (
-    <Menu className="text-black dark:text-white" onClick={onClick} />
+    <Menu className="size-6 shrink-0 cursor-pointer text-[#111827]" onClick={onClick} />
   );
 };
 
